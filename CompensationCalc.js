@@ -2,6 +2,8 @@
 //Utalizes JSON request to look up tax rate from online api
 //
 
+$('.outputBox').hide();
+
 $(document).ready(function () {
   let my401k1= 0;
   let   salary1 = 0;
@@ -358,7 +360,7 @@ Total();
 
 
   function Populate() {
-    $('#adjustedSalary').html('Adjusted Salary option 1: '+ salary1);
+    $('#adjustedSalary').html('<strong>Adjusted Salary option 1:</strong> '+ salary1);
     $('#total').html('total compensation option 1: '+ total1);
     $('#401kValue').html("401k value:" + (salary1*my401k1/100).toFixed(2));
     $('#daysOffValue').html("Days Off Value:" + (hourlyWage1*daysOff1*8).toFixed(2));
@@ -366,7 +368,7 @@ Total();
     $('#annualParkingCost').html("Annual Parking Cost: -" + parking1*12);
     $('#annualCommuteCost').html("Annual Commute Cost: -" + miles1*2*0.60*260);
     $('#annualCellPhoneValue').html("Annual Cell Phone Value:" + cellPhone1*12);
-    $('#otherBenefits').html("insurance, etc:" + insurance1);
+    $('#otherBenefits').html("insurance benefit:" + insurance1);
     $('#optionalBenefits').html("Bonus and tuition:" + (bonus1+tuition1));
 
     $('#adjustedSalary2').html('Adjusted Salary option 2: '+ salary2);
@@ -377,19 +379,21 @@ Total();
     $('#annualParkingCost2').html("Annual Parking Cost: -" + parking2*12);
     $('#annualCommuteCost2').html("Annual Commute Cost: -" + miles2*2*0.60*260);
     $('#annualCellPhoneValue2').html("Annual Cell Phone Value:" + cellPhone2*12);
-    $('#otherBenefits2').html("insurance, etc:" + insurance2);
+    $('#otherBenefits2').html("insurance benefit:" + insurance2);
     $('#optionalBenefits2').html("Bonus and tuition:" + (bonus2+tuition2));
 
   }
 
 
   function Total() {
+      $('.outputBox').show();
     hourlyWage1 = salary1/40/52
     hourlyWage2 = salary2/40/52
     total1 = (salary1 + my401k1*salary1/100 + hourlyWage1*daysOff1*8 - marginalTaxTotal1 - parking1*12 - miles1*2*0.60*260 + insurance1 + bonus1 + cellPhone1*12 + tuition1).toFixed(2);
     total2 = (salary2 + my401k2*salary2/100 + hourlyWage2*daysOff2*8 - marginalTaxTotal2 - parking2*12 - miles2*2*0.60*260 + insurance2 + bonus2 + cellPhone2*12 + tuition2).toFixed(2);
     Populate();
   }
+
 
   function Multiplier() {
     // state1= $('#state_1').val();

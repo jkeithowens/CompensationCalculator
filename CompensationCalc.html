@@ -20,9 +20,9 @@
   </h1>
   </div>
 
-  <div class="input">
+  <div class="containerinput">
 
-
+    <div class='option1'>
       <h3>Option #1</h3>
 
       <select id="state_1">
@@ -104,9 +104,12 @@
 
       <input id="tuition_1" placeholder="Annual Tuition Reimbursement" type="number">
 
+    </div>
+    <div class='option2'>
       <h3>Option #2</h3>
 
       <select id="state_2"> Select State
+        <option value="" selected disabled hidden>Select State</option>
       	<option value="AL">Alabama</option>
       	<option value="AK">Alaska</option>
       	<option value="AZ">Arizona</option>
@@ -191,42 +194,41 @@
       <br />
       <br />
       <input id="send" name="submit" type="submit" value="Compare">
+
+    </div>
+</div>
 <br />
-<div id="output1">
-  <p id='adjustedSalary'></p>
-  <p id='401kValue'></p>
-  <p id='daysOffValue'></p>
-  <p id='stateTax'></p>
-  <p id='annualParkingCost'></p>
-  <p id='annualCommuteCost'></p>
-  <p id='annualCellPhoneValue'></p>
-  <p id='otherBenefits'></p>
-  <p id='optionalBenefits'></p>
-  <p id='total'></p>
-</div>
-
-<div id="output2">
-  <p id='adjustedSalary2'></p>
-  <p id='401kValue2'></p>
-  <p id='daysOffValue2'></p>
-  <p id='stateTax2'></p>
-  <p id='annualParkingCost2'></p>
-  <p id='annualCommuteCost2'></p>
-  <p id='annualCellPhoneValue2'></p>
-  <p id='otherBenefits2'></p>
-  <p id='optionalBenefits2'></p>
-  <p id='total2'></p>
-</div>
-
+<div class='outputBox'>
+  <div id="output1">
+    <p id='adjustedSalary'></p>
+    <p id='401kValue'></p>
+    <p id='daysOffValue'></p>
+    <p id='stateTax'></p>
+    <p id='annualParkingCost'></p>
+    <p id='annualCommuteCost'></p>
+    <p id='annualCellPhoneValue'></p>
+    <p id='otherBenefits'></p>
+    <p id='optionalBenefits'></p>
+    <p id='total'></p>
   </div>
 
+  <div id="output2">
+    <p id='adjustedSalary2'></p>
+    <p id='401kValue2'></p>
+    <p id='daysOffValue2'></p>
+    <p id='stateTax2'></p>
+    <p id='annualParkingCost2'></p>
+    <p id='annualCommuteCost2'></p>
+    <p id='annualCellPhoneValue2'></p>
+    <p id='otherBenefits2'></p>
+    <p id='optionalBenefits2'></p>
+    <p id='total2'></p>
+  </div>
+</div>
 
 
 
-  <script >
 
-
-  </script>
 
 
 </body>

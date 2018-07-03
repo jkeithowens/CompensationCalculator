@@ -1,21 +1,34 @@
   #container {
     padding: 10px;
-    background-color: #lightgray;
+    background-color: rgb(241, 149, 73);
+    border-radius: 5px;
+    color: white;
+  }
+
+.option1{
+color: white;
+  }
+
+.option2{
+color: white;
   }
 
 
   #output1{
+    color:white;
     width:49%;
-    margin:auto;
-    overflow:hidden;
-    float:left;;
+    /* margin:auto;
+    overflow:hidden; */
+    float:left;
+
   }
 
-  #output2{
+  #output2 {
+    color:white;
     width:49%;
-    margin:auto;
-    overflow:hidden;
-    float: left;
+/* background: rgb(25, 110, 218); */
+    /* margin:auto; */
+    float: right;
   }
 
   input::-webkit-outer-spin-button,
@@ -35,7 +48,7 @@
       box-sizing: border-box; /* Make sure that padding and width stays in place */
       margin-top: 2px; /* Add a top margin */
       margin-bottom: 2px; /* Bottom margin */
-      resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+      resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
   }
 
   input[type=text], select {
@@ -46,7 +59,7 @@
       box-sizing: border-box; /* Make sure that padding and width stays in place */
       margin-top: 2px; /* Add a top margin */
       margin-bottom: 2px; /* Bottom margin */
-      resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+      resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
   }
 
   /* Style the submit button with a specific background color etc */
@@ -68,6 +81,15 @@
   /* Add a background color and some padding around the form */
   .containerinput {
       border-radius: 5px;
-      background-color: #f2f2f2;
+      background-color: rgb(4, 60, 156);
       padding: 20px;
+      margin-top: 10px;
+  }
+
+  .outputBox {
+    border-radius: 5px;
+    background: rgb(31, 138, 177);
+    padding: 5px;
+    overflow:hidden;
+
   }
