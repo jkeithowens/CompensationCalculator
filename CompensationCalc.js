@@ -98,12 +98,19 @@ $('#send').on("click",  function () {
 reset();
 
 
-  status1= $('#taxStatus_1').val();
-  if (status1 != null) {
-  } else {
-    alert("please select a filing status for option 1")
-    return false
-  }
+  // status1= $('#taxStatus_1').val();
+  // if (status1 != null) {
+  // } else {
+  //   alert("please select a filing status for option 1")
+  //   return false
+  // }
+// function status1Check(a){
+//   return status != null ? "" : alert("please select a filing status for option 1")
+//   return false
+// }
+// status1Check(status1);
+
+
 
 state1= $('#state_1').val();
   if (state1 != null) {
