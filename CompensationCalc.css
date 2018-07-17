@@ -14,11 +14,11 @@ color: white;
   }
 
 
-  #output1{
+  /* #output1{
     color:white;
     width:49%;
-    /* margin:auto;
-    overflow:hidden; */
+    margin:auto;
+    overflow:hidden;
     float:left;
 
   }
@@ -26,10 +26,10 @@ color: white;
   #output2 {
     color:white;
     width:49%;
-/* background: rgb(25, 110, 218); */
-    /* margin:auto; */
+background: rgb(25, 110, 218);
+    margin:auto;
     float: right;
-  }
+  } */
 
   input::-webkit-outer-spin-button,
   input::-webkit-inner-spin-button {
