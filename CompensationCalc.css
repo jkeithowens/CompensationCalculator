@@ -84,6 +84,8 @@ color: white;
       background-color: rgb(4, 60, 156);
       padding: 20px;
       margin-top: 10px;
+      margin-left: 5px;
+      margin-right: 5px;
   }
 
   .outputBox {
@@ -91,6 +93,7 @@ color: white;
     background: rgb(31, 138, 177);
     padding: 5px;
     overflow:hidden;
+    margin: 5px;
 
   }
 

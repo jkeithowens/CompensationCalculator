@@ -362,27 +362,27 @@ Total();
 
 
   function Populate() {
-    $('#adjustedSalary').html('<strong>Adjusted Salary option 1:</strong> '+ salary1);
+    $('#adjustedSalary').html('<strong>Adjusted Salary option 1: </strong> '+ salary1);
     $('#total').html('total compensation option 1: '+ total1);
-    $('#401kValue').html("401k value:" + (salary1*my401k1/100).toFixed(2));
-    $('#daysOffValue').html("Days Off Value:" + (hourlyWage1*daysOff1*8).toFixed(2));
-    $('#stateTax').html('State Tax: -' + marginalTaxTotal1);
+    $('#401kValue').html("401k value: " + (salary1*my401k1/100).toFixed(2));
+    $('#daysOffValue').html("Days Off Value: " + (hourlyWage1*daysOff1*8).toFixed(2));
+    $('#stateTax').html('State Tax: - ' + marginalTaxTotal1);
     $('#annualParkingCost').html("Annual Parking Cost: -" + parking1*12);
     $('#annualCommuteCost').html("Annual Commute Cost: -" + miles1*2*0.60*260);
-    $('#annualCellPhoneValue').html("Annual Cell Phone Value:" + cellPhone1*12);
-    $('#otherBenefits').html("insurance benefit:" + insurance1);
-    $('#optionalBenefits').html("Bonus and tuition:" + (bonus1+tuition1));
+    $('#annualCellPhoneValue').html("Annual Cell Phone Value: " + cellPhone1*12);
+    $('#otherBenefits').html("insurance benefit: " + insurance1);
+    $('#optionalBenefits').html("Bonus and tuition: " + (bonus1+tuition1));
 
-    $('#adjustedSalary2').html('Adjusted Salary option 2: '+ salary2);
+    $('#adjustedSalary2').html('<strong>Adjusted Salary option 2: </strong>'+ salary2);
     $('#total2').html('total compensation option 2: '+ total2);
-    $('#401kValue2').html("401k value:" + (salary2*my401k2/100).toFixed(2));
-    $('#daysOffValue2').html("Days Off Value:" + (hourlyWage2*daysOff2*8).toFixed(2));
+    $('#401kValue2').html("401k value: " + (salary2*my401k2/100).toFixed(2));
+    $('#daysOffValue2').html("Days Off Value: " + (hourlyWage2*daysOff2*8).toFixed(2));
     $('#stateTax2').html('State Tax: -' + marginalTaxTotal2);
     $('#annualParkingCost2').html("Annual Parking Cost: -" + parking2*12);
     $('#annualCommuteCost2').html("Annual Commute Cost: -" + miles2*2*0.60*260);
-    $('#annualCellPhoneValue2').html("Annual Cell Phone Value:" + cellPhone2*12);
-    $('#otherBenefits2').html("insurance benefit:" + insurance2);
-    $('#optionalBenefits2').html("Bonus and tuition:" + (bonus2+tuition2));
+    $('#annualCellPhoneValue2').html("Annual Cell Phone Value: " + cellPhone2*12);
+    $('#otherBenefits2').html("insurance benefit: " + insurance2);
+    $('#optionalBenefits2').html("Bonus and tuition: " + (bonus2+tuition2));
 
   }
 
