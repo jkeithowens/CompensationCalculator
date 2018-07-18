@@ -13,6 +13,13 @@ color: white;
 color: white;
   }
 
+tr {
+  border-bottom: 1px solid black;
+}
+td {
+  border-bottom: 1px solid black;
+
+}
 
   /* #output1{
     color:white;
@@ -94,6 +101,7 @@ background: rgb(25, 110, 218);
     padding: 5px;
     overflow:hidden;
     margin: 5px;
+
 
   }
 
