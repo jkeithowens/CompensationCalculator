@@ -13,12 +13,19 @@ color: white;
 color: white;
   }
 
+tr {
+  border-bottom: 1px solid black;
+}
+td {
+  border-bottom: 1px solid black;
 
-  #output1{
+}
+
+  /* #output1{
     color:white;
     width:49%;
-    /* margin:auto;
-    overflow:hidden; */
+    margin:auto;
+    overflow:hidden;
     float:left;
 
   }
@@ -26,10 +33,10 @@ color: white;
   #output2 {
     color:white;
     width:49%;
-/* background: rgb(25, 110, 218); */
-    /* margin:auto; */
+background: rgb(25, 110, 218);
+    margin:auto;
     float: right;
-  }
+  } */
 
   input::-webkit-outer-spin-button,
   input::-webkit-inner-spin-button {
@@ -84,6 +91,8 @@ color: white;
       background-color: rgb(4, 60, 156);
       padding: 20px;
       margin-top: 10px;
+      margin-left: 5px;
+      margin-right: 5px;
   }
 
   .outputBox {
@@ -91,6 +100,8 @@ color: white;
     background: rgb(31, 138, 177);
     padding: 5px;
     overflow:hidden;
+    margin: 5px;
+
 
   }
 
